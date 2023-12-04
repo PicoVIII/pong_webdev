@@ -41,7 +41,7 @@ div {
 }
 
 /* Styling for buttons on start and game over screens */
-#start a, #game-over a, #reset, .controlspopup button, #backtomenu {
+#start a, #game-over a, .controlspopup button, #backtomenu {
     -webkit-text-stroke-width: 1px; /* Adds outlines to the text */
     -webkit-text-stroke-color: black; /* Outline colors */
     background-color: gold;
@@ -59,7 +59,7 @@ div {
 }
 
 /* Hover styles for buttons */
-#start a:hover, #game-over a:hover, #reset:hover, .controlspopup button:hover {
+#start a:hover, #game-over a:hover, .controlspopup button:hover {
     border-color: gold;
     background-color: goldenrod;
     color: gold;
@@ -83,26 +83,6 @@ div {
     font-family: "Press Start 2P";
     font-size: 80px;
     color: gold;
-}
-
-/* Styling for the reset button */
-#reset {
-    font-family: "Press Start 2P";
-    font-size: 25px;
-    width: 240px;
-    height: 90px;
-    border: 5px solid;
-    cursor: pointer;
-    border-color: goldenrod;
-    background-color: gold;
-    color: goldenrod;
-}
-
-/* Hover styles for the reset button */
-#reset:hover {
-    border-color: gold;
-    color: gold;
-    background-color: goldenrod;
 }
 
 /* Styling for the back to menu button (in-game) */
