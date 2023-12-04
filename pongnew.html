@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="123.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Press+Start+2P?query=8">
+</head>
+<body style="overflow-x: hidden; overflow-y: hidden;">
+    
+    <div id="Game" style="display:none">
+        <canvas id="table" width="1200" height="690"></canvas>
+        <div id="scoreboard">0 : 0</div>
+        <br>
+        <button id="reset">Reset Game</button>
+        <button id="backtomenu">Main Menu</button>
+    </div>
+    <div id="start" style="display:block">
+        <h1 id="titlebar">PONG?</h1>
+        <a href="#" onclick="mainmenu()">Play Game!</a>
+        
+        <div class="controls">
+            <button type="button" class="bootn" onclick="OpenControls()">Controls</button>
+
+            <div class="controlspopup" id="controlspopup">
+                <img src="images/star.gif">
+                <h2>CONTROLS</h2>
+                <p>Player 1 (Left)</p>
+                <P>Up: W</P>
+                <p>Down: S</p>
+                <br>
+                <p>Player 2 (Right)</p>
+                <p>Up: Up Arrow</p>
+                <p>Down: Down Arrow</p>
+                <button type="button" onclick="CloseControls()">Okay</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-over" style="display:none">
+        <h1>Game Over</h1>
+         <p id="winner"></p>
+        <a href="#" onclick="mainmenu()">Play Again?</a>
+        <button id="backtomenu-gameover">Main Menu</button>
+    </div>
+    <script src="pong.js"></script>
+    
+</body>
+</html>

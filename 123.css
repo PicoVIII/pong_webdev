@@ -1,0 +1,253 @@
+/* Font for pixel text */
+@font-face {
+    font-family: "Press Start 2P";
+    src: url(Press_Start_2P/PressStart2P-Regular.ttf) format(truetype);
+}
+
+/* Body styles, background, and text color */
+body {
+    background-image: url(images/erm.gif);
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* General styling for div elements */
+div {
+    padding: 10px;
+}
+
+/* Styling for start and game over screens */
+#start, #game-over {
+    -webkit-text-stroke-width: 1px; /* Adds outlines to the text */
+    -webkit-text-stroke-color: black; /* Outline colors */
+    font-family: "Press Start 2P";
+    color: rgb(0, 132, 255);
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -125px;
+    height: 200px;
+    width: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for buttons on start and game over screens */
+#start a, #game-over a, #reset, .controlspopup button, #backtomenu {
+    -webkit-text-stroke-width: 1px; /* Adds outlines to the text */
+    -webkit-text-stroke-color: black; /* Outline colors */
+    background-color: gold;
+    border: 5px solid goldenrod;
+    color: goldenrod;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 1px;
+    cursor: pointer;
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+}
+
+/* Hover styles for buttons */
+#start a:hover, #game-over a:hover, #reset:hover, .controlspopup button:hover {
+    border-color: gold;
+    background-color: goldenrod;
+    color: gold;
+}
+
+/* Styling for in-game elements */
+#Game {
+    text-align: center;
+}
+
+/* Canvas border and border color */
+#table {
+    border: 5px solid;
+    border-color: goldenrod;
+}
+
+/* Styling for the scoreboard */
+#scoreboard {
+    -webkit-text-stroke-width: 4px; /* Adds outlines to the text */
+    -webkit-text-stroke-color: goldenrod; /* Outline color */
+    font-family: "Press Start 2P";
+    font-size: 80px;
+    color: gold;
+}
+
+/* Styling for the reset button */
+#reset {
+    font-family: "Press Start 2P";
+    font-size: 25px;
+    width: 240px;
+    height: 90px;
+    border: 5px solid;
+    cursor: pointer;
+    border-color: goldenrod;
+    background-color: gold;
+    color: goldenrod;
+}
+
+/* Hover styles for the reset button */
+#reset:hover {
+    border-color: gold;
+    color: gold;
+    background-color: goldenrod;
+}
+
+/* Styling for the back to menu button (in-game) */
+#backtomenu {
+    font-family: "Press Start 2P";
+    font-size: 25px;
+    width: 240px;
+    height: 90px;
+    border: 5px solid;
+    cursor: pointer;
+    border-color: goldenrod;
+    background-color: gold;
+    color: goldenrod;
+}
+
+/* Styling for the back to menu button (game-over screen) */
+#backtomenu-gameover {
+    font-family: "Press Start 2P";
+    font-size: 25px;
+    width: 180px;
+    height: 90px;
+    border: 5px solid;
+    cursor: pointer;
+    border-color: goldenrod;
+    background-color: gold;
+    color: goldenrod;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Hover styles for the back to menu buttons */
+#backtomenu:hover, #backtomenu-gameover:hover {
+    border-color: gold;
+    color: gold;
+    background-color: goldenrod;
+}
+
+/* Styling for the start screen */
+#start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+/* Styling for the title bar */
+#titlebar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the controls button */
+.bootn {
+    border: 5px solid goldenrod;
+    text-align: center;
+    font-family: "Press Start 2P";
+    padding: 10px 10px;
+    background: gold;
+    color: goldenrod;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Hover styles for the controls button */
+.bootn:hover {
+    background-color: goldenrod;
+    color: gold;
+    border-color: gold;
+}
+
+/* Styling for the controls content */
+.controls {
+    margin-top: 10px;
+}
+
+/* Styling for control buttons */
+.controls button {
+    border: 5px solid goldenrod;
+    background-color: gold;
+    color: goldenrod;
+}
+
+/* Hover styles for control buttons */
+.controls button:hover {
+    border-color: gold;
+    background-color: goldenrod;
+    color: gold;
+}
+
+/* Styling for the controls popup */
+.controlspopup {
+    border: 5px solid rgb(0, 132, 255);
+    width: 400px;
+    background: skyblue;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+/* Animation for opening controls popup */
+.Open_Controls {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Styling for controls popup image */
+.controlspopup img {
+    width: 100px;
+    margin-top: -50px;
+}
+
+/* Styling for controls popup heading */
+.controlspopup h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+/* Styling for controls popup button */
+.controlspopup button {
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    color: rgb(117, 90, 22);
+    width: 200px;
+    height: 50px;
+    padding: 10px 0;
+    border-width: 5px;
+    background-color: gold;
+    border-color: goldenrod;
+    outline: none;
+}
+
+/* Hover styles for controls popup button */
+.controlspopup button:hover {
+    cursor: pointer;
+    color: gold;
+    border-width: 5px;
+    background-color: goldenrod;
+    border-color: gold;
+    outline: none;
+}
