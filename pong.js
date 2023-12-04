@@ -228,35 +228,6 @@ function resetbgm(){ //resets bgm
     victorysfx.currentTime = 0;
 }
 
-function gamereset() { //reset button resets the game (in the middle of the game)
-
-    selectsfx.play();
-    
-    scoreP1 = 0;
-    scoreP2 = 0;
-    p1 = {
-        width: paddleWidth,
-        height: paddleHeight,
-        x: 25,
-        y: (gameheight - paddleHeight) / 2
-    }
-    
-    p2 = {
-        width: paddleWidth,
-        height: paddleHeight,
-        x: gamewidth - 25 - paddleWidth,
-        y: (gameheight - paddleHeight) / 2
-    };
-    speedballz = 1;
-    Xballz = 0;
-    Yballz = 0;
-    Xballz_drctn = 0;
-    Yballz_drctn = 0;
-    NewScore();
-    clearInterval(intervalID);
-    startgame();
-};
-
 function showMainMenu() {
 
     selectsfx.play();
